@@ -23,10 +23,6 @@ body {
   border-radius: 4px;
 }
 
-#bicicleta{
-  max-width: 100%;
-  min-height: 100%;
-}
 .grid {
   display: grid;
   grid-template-columns: 500px 500px;
@@ -34,19 +30,20 @@ body {
   padding: 60px;
 }
 
-.descricao, .beneficios, .img {
-  background: lightcoral;
+#bicicleta{
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.descricao {
+  background: rgb(255,255,255);
 }
 
 h1 {
   font-size: 32px;
 }
-.descricao {
-  background: rgb(255,255,255);
-}
 
 .organizaDescricao{
-  /* background: lightpink; */
   width: 430px;
   margin: 90px 30px;
   font-size: 20px;
@@ -63,6 +60,16 @@ h1 {
   font-size: 16px;
   position: relative;
   top: 10px;
+}
+
+#enfeite {
+  background: red;
+  height: 4px;
+  width: 60px;
+  position: absolute;
+  z-index: 1;
+  left: 925px;
+  top: 285px;
 }
 
 #tituloVantagens {
