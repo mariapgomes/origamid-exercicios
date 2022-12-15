@@ -25,15 +25,17 @@ body {
 
 #bicicleta{
   max-width: 100%;
+  min-height: 100%;
 }
 .grid {
   display: grid;
   grid-template-columns: 500px 500px;
   place-content: center;
-  gap: 1px;
+  gap: 5px;
   padding: 60px;
 }
 
 .descricao, .vantagens, .beneficios, .img {
   background: lightcoral;
 }
+
