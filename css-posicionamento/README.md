@@ -8,6 +8,6 @@ Esse projeto consite em criar um site simples de venda de bicicleta, estático e
 
 * Top, Rigth, Botton e Left;
 * Grid Template Columns;
-* Aling e Justify Content
+* Aling e Justify Content;
 * Flexbox;
 * Position.

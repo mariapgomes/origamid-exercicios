@@ -14,7 +14,7 @@ body {
   place-content: center;
 }
 
-.botaoMenu{
+.botao-menu{
   background: rgb(255,255,255);
   text-align: center;
   text-decoration: none;
@@ -43,7 +43,7 @@ h1 {
   font-size: 32px;
 }
 
-.organizaDescricao{
+.organiza-descricao{
   width: 430px;
   margin: 90px 30px;
   font-size: 20px;
@@ -51,7 +51,7 @@ h1 {
   line-height: 25px;
 }
 
-#botaoVer {
+#botao-ver {
   background: red;
   padding: 15px 30px;
   text-decoration: none;
@@ -72,7 +72,7 @@ h1 {
   top: 285px;
 }
 
-#tituloVantagens {
+#titulo-vantagens {
   font-size: 64px;
   text-align: right;
   margin: 154px 30px;
@@ -83,7 +83,7 @@ h1 {
   background: rgb(255,255,255);
 }
 
-#orgranizacaoBeneficios {
+#orgraniza-beneficios {
   text-align: left;
   width: 350px;
   margin: 60px;
@@ -93,7 +93,7 @@ h1 {
   left: 50px;
 }
 
-.h3Beneficios{
+.h3-beneficios{
   font-size: 18px;
   margin-top: 40px;
   margin-bottom: -10px;
@@ -106,7 +106,7 @@ h1 {
   margin-top: 20px;
 }
 
-#iconeEletricidade {
+#icone-eletricidade {
   margin-top: 0px;
 }
 
