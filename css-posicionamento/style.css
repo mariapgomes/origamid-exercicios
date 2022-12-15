@@ -39,3 +39,30 @@ body {
   background: lightcoral;
 }
 
+h1 {
+  font-size: 32px;
+}
+.descricao {
+  background: rgb(255,255,255);
+  
+}
+
+.organizaDescricao{
+  /* background: lightpink; */
+  width: 430px;
+  margin: 90px 30px;
+  font-size: 20px;
+  text-align: right;
+  line-height: 25px;
+}
+
+#botaoVer {
+  background: red;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: rgb(255,255,255);
+  font-size: 16px;
+  position: relative;
+  top: 10px;
+}
