@@ -1,1 +1,20 @@
+body {
+  background: #f7f7f7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+  display: flex;
+  gap: 20px;
+  place-content: center;
+}
+
+.botaoMenu{
+  background: rgb(255,255,255);
+  text-align: center;
+  text-decoration: none;
+  color: #1f1f1f;
+  padding: 15px 30px;
+  border-radius: 4px;
+}
 
