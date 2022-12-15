@@ -1,6 +1,11 @@
 body {
   background: #f7f7f7;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#logo {
+  padding: 50px;
 }
 
 .menu{
@@ -18,7 +23,7 @@ body {
   border-radius: 4px;
 }
 
-img{
+#bicicleta{
   max-width: 100%;
 }
 .grid {
