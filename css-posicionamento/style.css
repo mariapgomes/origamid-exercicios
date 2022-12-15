@@ -43,7 +43,6 @@ h1 {
 }
 .descricao {
   background: rgb(255,255,255);
-  
 }
 
 .organizaDescricao{
@@ -69,6 +68,37 @@ h1 {
 #tituloVantagens {
   font-size: 64px;
   text-align: right;
-  margin: 90px 30px;
+  margin: 154px 30px;
   color: #c6c6c6;
+}
+
+.beneficios {
+  background: rgb(255,255,255);
+}
+
+#orgranizacaoBeneficios {
+  text-align: left;
+  width: 350px;
+  margin: 60px;
+  font-size: 20px;
+  line-height: 25px;
+  position: relative;
+  left: 50px;
+}
+
+.h3Beneficios{
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: -10px;
+}
+
+.icones {
+  /* background: lightcoral; */
+  position: absolute;
+  left: -45px;
+  margin-top: 20px;
+}
+
+#iconeEletricidade {
+  margin-top: 0px;
 }
