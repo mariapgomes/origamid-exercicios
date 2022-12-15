@@ -31,11 +31,10 @@ body {
   display: grid;
   grid-template-columns: 500px 500px;
   place-content: center;
-  gap: 5px;
   padding: 60px;
 }
 
-.descricao, .vantagens, .beneficios, .img {
+.descricao, .beneficios, .img {
   background: lightcoral;
 }
 
@@ -65,4 +64,11 @@ h1 {
   font-size: 16px;
   position: relative;
   top: 10px;
+}
+
+#tituloVantagens {
+  font-size: 64px;
+  text-align: right;
+  margin: 90px 30px;
+  color: #c6c6c6;
 }
