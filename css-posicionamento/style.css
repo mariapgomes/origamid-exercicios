@@ -2,6 +2,7 @@ body {
   background: #f7f7f7;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  margin: 0px;
 }
 
 #logo {
@@ -12,6 +13,7 @@ body {
   display: flex;
   gap: 20px;
   place-content: center;
+  flex-wrap: wrap;
 }
 
 .botao-menu{
@@ -32,7 +34,7 @@ body {
 
 #bicicleta{
   max-width: 100%;
-  min-height: 100%;
+  display: block;
 }
 
 .descricao {
@@ -44,6 +46,7 @@ h1 {
 }
 
 .organiza-descricao{
+  position: relative;
   width: 430px;
   margin: 90px 30px;
   font-size: 20px;
@@ -67,9 +70,8 @@ h1 {
   height: 4px;
   width: 60px;
   position: absolute;
-  z-index: 1;
-  left: 925px;
-  top: 285px;
+  top: -50px;
+  right: -70px;
 }
 
 #titulo-vantagens {
@@ -94,13 +96,12 @@ h1 {
 }
 
 .h3-beneficios{
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 40px;
   margin-bottom: -10px;
 }
 
 .icones {
-  /* background: lightcoral; */
   position: absolute;
   left: -45px;
   margin-top: 20px;
