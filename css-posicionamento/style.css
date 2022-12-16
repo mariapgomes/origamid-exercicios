@@ -1,0 +1,118 @@
+body {
+  background: #f7f7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0px;
+}
+
+#logo {
+  padding: 50px;
+}
+
+.menu{
+  display: flex;
+  gap: 20px;
+  place-content: center;
+  flex-wrap: wrap;
+}
+
+.botao-menu{
+  background: rgb(255,255,255);
+  text-align: center;
+  text-decoration: none;
+  color: #1f1f1f;
+  padding: 15px 30px;
+  border-radius: 4px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  place-content: center;
+  padding: 60px;
+}
+
+#bicicleta{
+  max-width: 100%;
+  display: block;
+}
+
+.descricao {
+  background: rgb(255,255,255);
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.organiza-descricao{
+  position: relative;
+  width: 430px;
+  margin: 90px 30px;
+  font-size: 20px;
+  text-align: right;
+  line-height: 25px;
+}
+
+#botao-ver {
+  background: red;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: rgb(255,255,255);
+  font-size: 16px;
+  position: relative;
+  top: 10px;
+}
+
+#enfeite {
+  background: red;
+  height: 4px;
+  width: 60px;
+  position: absolute;
+  top: -50px;
+  right: -70px;
+}
+
+#titulo-vantagens {
+  font-size: 64px;
+  text-align: right;
+  margin: 154px 30px;
+  color: #c6c6c6;
+}
+
+.beneficios {
+  background: rgb(255,255,255);
+}
+
+#orgraniza-beneficios {
+  text-align: left;
+  width: 350px;
+  margin: 60px;
+  font-size: 20px;
+  line-height: 25px;
+  position: relative;
+  left: 50px;
+}
+
+.h3-beneficios{
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: -10px;
+}
+
+.icones {
+  position: absolute;
+  left: -45px;
+  margin-top: 20px;
+}
+
+#icone-eletricidade {
+  margin-top: 0px;
+}
+
+footer {
+  background: rgb(255,255,255);
+  padding: 20px;
+  font-size: 20px;
+}
