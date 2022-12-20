@@ -74,11 +74,18 @@ h1 {
   right: -70px;
 }
 
+.vantagens {
+  background-image: url("/img/onda.svg");
+  display: block;
+}
+
 #titulo-vantagens {
+  margin: auto; 
   font-size: 4rem;
   text-align: right;
   margin: 154px 30px;
-  color: #c6c6c6;
+  color: rgba(0, 0, 0, 0.2);
+  padding: 2.25rem 0;
 }
 
 .beneficios {
