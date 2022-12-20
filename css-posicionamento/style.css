@@ -42,16 +42,16 @@ body {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .organiza-descricao{
   position: relative;
   width: 430px;
   margin: 90px 30px;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: right;
-  line-height: 25px;
+  line-height: 1.56rem;
 }
 
 #botao-ver {
@@ -60,7 +60,7 @@ h1 {
   text-decoration: none;
   border-radius: 5px;
   color: rgb(255,255,255);
-  font-size: 16px;
+  font-size: 1rem;
   position: relative;
   top: 10px;
 }
@@ -75,7 +75,7 @@ h1 {
 }
 
 #titulo-vantagens {
-  font-size: 64px;
+  font-size: 4rem;
   text-align: right;
   margin: 154px 30px;
   color: #c6c6c6;
@@ -89,14 +89,14 @@ h1 {
   text-align: left;
   width: 350px;
   margin: 60px;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 1.25rem;
+  line-height: 1.56rem;
   position: relative;
   left: 50px;
 }
 
 .h3-beneficios{
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-top: 40px;
   margin-bottom: -10px;
 }
@@ -114,5 +114,5 @@ h1 {
 footer {
   background: rgb(255,255,255);
   padding: 20px;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
