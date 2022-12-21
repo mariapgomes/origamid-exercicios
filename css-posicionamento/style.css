@@ -74,10 +74,12 @@ h1 {
   background-color: #900;
 }
 
-#enfeite {
-  background: red;
+h1::before{
+  content: '';
   height: 4px;
   width: 60px;
+  background: red;
+  display: block;
   position: absolute;
   top: -50px;
   right: -70px;
