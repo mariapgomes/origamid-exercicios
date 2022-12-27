@@ -6,10 +6,11 @@ body {
 }
 
 #logo {
-  padding: 50px;
+  padding: 60px;
 }
 
-.menu{
+.menu {
+  list-style: none;
   display: flex;
   gap: 20px;
   place-content: center;
@@ -23,6 +24,11 @@ body {
   color: #1f1f1f;
   padding: 15px 30px;
   border-radius: 4px;
+  border: 2px solid #f7f7f7;
+}
+
+.botao-menu:hover {
+  border: 2px solid red;
 }
 
 .grid {
@@ -42,16 +48,16 @@ body {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .organiza-descricao{
   position: relative;
   width: 430px;
   margin: 90px 30px;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: right;
-  line-height: 25px;
+  line-height: 1.56rem;
 }
 
 #botao-ver {
@@ -60,59 +66,86 @@ h1 {
   text-decoration: none;
   border-radius: 5px;
   color: rgb(255,255,255);
-  font-size: 16px;
+  font-size: 1rem;
   position: relative;
   top: 10px;
 }
 
-#enfeite {
-  background: red;
+#botao-ver:hover {
+  background-color: #900;
+}
+
+h1::before{
+  content: '';
   height: 4px;
   width: 60px;
+  background: red;
+  display: block;
   position: absolute;
   top: -50px;
   right: -70px;
 }
 
-#titulo-vantagens {
-  font-size: 64px;
+.vantagens {
+  background-image: url("/img/onda.svg");
+}
+
+#titulo-vantagens {  
+  font-size: 4rem;
   text-align: right;
-  margin: 154px 30px;
-  color: #c6c6c6;
+  color: rgba(0, 0, 0, 0.2);
+  width: 420px;
+  margin: 120px 0;
+  padding: 2.5rem;
 }
 
 .beneficios {
   background: rgb(255,255,255);
+  height: auto;
 }
 
-#orgraniza-beneficios {
+#organiza-beneficios {
+  list-style: none;
   text-align: left;
-  width: 350px;
-  margin: 60px;
-  font-size: 20px;
-  line-height: 25px;
-  position: relative;
+  margin: 40px;
+  font-size: 1.25rem;
+  line-height: 1.56rem;
   left: 50px;
+  padding: 0;
 }
 
-.h3-beneficios{
-  font-size: 20px;
-  margin-top: 40px;
-  margin-bottom: -10px;
+#organiza-beneficios li {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  border-left: 4px solid rgb(255,255,255);
 }
 
 .icones {
-  position: absolute;
-  left: -45px;
-  margin-top: 20px;
+  grid-column: 1/1;
+  margin: 20px 20px 15px;
 }
 
-#icone-eletricidade {
-  margin-top: 0px;
+#organiza-beneficios p{
+  grid-column: 2/4;
+  margin-top: 0;
+}
+
+#organiza-beneficios li:nth-child(odd) {
+  background-color: #f7f7f7;
+  border-left: 4px solid #f7f7f7;
+}
+
+#organiza-beneficios li:hover {
+  border-left: 4px solid red;
+}
+
+.h3-beneficios{
+  font-size: 1.25rem;
+  margin-bottom: 0px;
 }
 
 footer {
   background: rgb(255,255,255);
   padding: 20px;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
