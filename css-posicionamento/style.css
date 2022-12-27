@@ -42,7 +42,7 @@ body {
   padding: 60px 0;
 }
 
-#bicicleta{
+.img{
   max-width: 100%;
   display: block;
 }
@@ -65,6 +65,7 @@ h1 {
 }
 
 #botao-ver {
+  display: inline-block;
   background: red;
   padding: 15px 30px;
   text-decoration: none;
@@ -152,6 +153,47 @@ footer {
   background: rgb(255,255,255);
   padding: 20px;
   font-size: 1.25rem;
+}
+
+
+@media (max-width: 770px) {
+  #logo {
+    padding: 25px;
+  }
+
+  .grid {
+    grid-template-columns: 350px 350px;
+    padding: 30px 0;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h1::before{
+    width: 45px;
+    right: -53px;
+    top: -30px;
+    height: 3px;
+  }
+  
+  .organiza-descricao{
+    position: relative;
+    width: auto;
+    margin: 50px 30px;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  
+  #botao-ver {
+    padding: 15px 25px;
+    font-size: 1rem;
+  }
+
+  .img {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 480px) {
