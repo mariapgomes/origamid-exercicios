@@ -12,12 +12,16 @@ body {
 .menu {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
   gap: 20px;
   place-content: center;
   flex-wrap: wrap;
 }
 
 .botao-menu{
+  display: inline-block;
+  margin: 0;
   background: rgb(255,255,255);
   text-align: center;
   text-decoration: none;
@@ -35,10 +39,10 @@ body {
   display: grid;
   grid-template-columns: 500px 500px;
   place-content: center;
-  padding: 60px;
+  padding: 60px 0;
 }
 
-#bicicleta{
+.img{
   max-width: 100%;
   display: block;
 }
@@ -61,6 +65,7 @@ h1 {
 }
 
 #botao-ver {
+  display: inline-block;
   background: red;
   padding: 15px 30px;
   text-decoration: none;
@@ -87,15 +92,15 @@ h1::before{
 }
 
 .vantagens {
-  background-image: url("/img/onda.svg");
+  background-image: url("./img/onda.svg");
 }
 
-#titulo-vantagens {  
+#titulo-vantagens { 
   font-size: 4rem;
   text-align: right;
   color: rgba(0, 0, 0, 0.2);
-  width: 420px;
-  margin: 120px 0;
+  max-width: 390px;
+  margin: 120px 0 120px 15px;
   padding: 2.5rem;
 }
 
@@ -148,4 +153,42 @@ footer {
   background: rgb(255,255,255);
   padding: 20px;
   font-size: 1.25rem;
+}
+
+@media (max-width: 1020px) {
+  #logo {
+    padding: 25px;
+  }
+
+  .grid {
+    grid-template-columns: minmax(460px, 600px);
+    padding: 30px 0;
+  }
+
+  .organiza-descricao{
+    position: relative;
+    width: auto;
+    margin: 50px 30px;
+    line-height: 1.5rem;
+    margin: 70px 40px 70px 50px;
+  }
+
+  h1::before{
+    width: 40px;
+    right: -40px;
+  }
+
+  .menu {
+    gap: 10px;
+  }
+
+  .img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #titulo-vantagens {
+    margin: 100px auto;
+    font-size: 3.75rem
+  }
 }
