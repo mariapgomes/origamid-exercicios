@@ -5,17 +5,20 @@
   --cor-destaque-hover: #900;
   --cor-fonte: #1f1f1f;
   --cor-fonte-translucida: rgba(0, 0, 0, 0.2);
+  --cor-fonte-botao: #fff;
+  --bg-onda: url("./img/onda-clara.svg")
 }
 
 @media (prefers-color-scheme: dark){
- :root {
-  --cor-primaria: #222;
-  --cor-secundaria: #bbb;
-  --cor-destaque: red;
-  --cor-destaque-hover: #900;
-  --cor-fonte: #eee;
-  --cor-fonte-translucida: rgba(0, 0, 0, 0.2);
- }
+  :root {
+    --cor-primaria: #000;
+    --cor-secundaria: #222;
+    --cor-destaque: red;
+    --cor-destaque-hover: #900;
+    --cor-fonte: #fff;
+    --cor-fonte-translucida: rgba(255, 255, 255, 0.2);
+    --bg-onda: url("./img/onda-escura.svg")
+  }
 }
 
 body {
@@ -23,9 +26,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin: 0px;
+  color: var(--cor-fonte);
 }
 
-#logo {
+svg {
   padding: 60px;
 }
 
@@ -45,7 +49,7 @@ body {
   background: var(--cor-secundaria);
   text-align: center;
   text-decoration: none;
-  color: #1f1f1f;
+  color: var(--cor-fonte);
   padding: 15px 30px;
   border-radius: 4px;
   border: 2px solid transparent;
@@ -90,7 +94,7 @@ h1 {
   padding: 15px 30px;
   text-decoration: none;
   border-radius: 5px;
-  color: var(--cor-secundaria);
+  color: var(--cor-fonte-botao);
   font-size: 1rem;
   position: relative;
   top: 10px;
@@ -112,7 +116,7 @@ h1::before{
 }
 
 .vantagens {
-  background-image: url("./img/onda.svg");
+  background-image: var(--bg-onda);
 }
 
 #titulo-vantagens { 
