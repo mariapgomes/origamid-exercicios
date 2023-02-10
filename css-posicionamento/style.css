@@ -9,7 +9,12 @@
 
 @media (prefers-color-scheme: dark){
  :root {
-  --fundo: #222
+  --cor-primaria: #222;
+  --cor-secundaria: #bbb;
+  --cor-destaque: red;
+  --cor-destaque-hover: #900;
+  --cor-fonte: #eee;
+  --cor-fonte-translucida: rgba(0, 0, 0, 0.2);
  }
 }
 
