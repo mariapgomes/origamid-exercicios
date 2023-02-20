@@ -1,11 +1,35 @@
+:root {
+  --cor-primaria: #f7f7f7;
+  --cor-secundaria: rgb(255,255,255);
+  --cor-destaque: red;
+  --cor-destaque-hover: #900;
+  --cor-fonte: #1f1f1f;
+  --cor-fonte-translucida: rgba(0, 0, 0, 0.2);
+  --cor-fonte-botao: #fff;
+  --bg-onda: url("./img/onda-clara.svg")
+}
+
+@media (prefers-color-scheme: dark){
+  :root {
+    --cor-primaria: #000;
+    --cor-secundaria: #222;
+    --cor-destaque: red;
+    --cor-destaque-hover: #900;
+    --cor-fonte: #fff;
+    --cor-fonte-translucida: rgba(255, 255, 255, 0.2);
+    --bg-onda: url("./img/onda-escura.svg")
+  }
+}
+
 body {
-  background: #f7f7f7;
+  background: var(--cor-primaria);
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin: 0px;
+  color: var(--cor-fonte);
 }
 
-#logo {
+svg {
   padding: 60px;
 }
 
@@ -22,17 +46,17 @@ body {
 .botao-menu{
   display: inline-block;
   margin: 0;
-  background: rgb(255,255,255);
+  background: var(--cor-secundaria);
   text-align: center;
   text-decoration: none;
-  color: #1f1f1f;
+  color: var(--cor-fonte);
   padding: 15px 30px;
   border-radius: 4px;
-  border: 2px solid #f7f7f7;
+  border: 2px solid transparent;
 }
 
 .botao-menu:hover {
-  border: 2px solid red;
+  border: 2px solid var(--cor-destaque);
 }
 
 .grid {
@@ -50,7 +74,7 @@ body {
 }
 
 .descricao {
-  background: rgb(255,255,255);
+  background: var(--cor-secundaria);
 }
 
 h1 {
@@ -68,25 +92,25 @@ h1 {
 
 #botao-ver {
   display: inline-block;
-  background: red;
+  background: var(--cor-destaque);
   padding: 15px 30px;
   text-decoration: none;
   border-radius: 5px;
-  color: rgb(255,255,255);
+  color: var(--cor-fonte-botao);
   font-size: 1rem;
   position: relative;
   top: 10px;
 }
 
 #botao-ver:hover {
-  background-color: #900;
+  background-color: var(--cor-destaque-hover);
 }
 
 h1::before{
   content: '';
   height: 4px;
   width: 60px;
-  background: red;
+  background: var(--cor-destaque);
   display: block;
   position: absolute;
   top: -50px;
@@ -94,20 +118,20 @@ h1::before{
 }
 
 .vantagens {
-  background-image: url("./img/onda.svg");
+  background-image: var(--bg-onda);
 }
 
 #titulo-vantagens { 
   font-size: 4rem;
   text-align: right;
-  color: rgba(0, 0, 0, 0.2);
+  color: var(--cor-fonte-translucida);
   max-width: 390px;
   margin: 120px 0 120px 15px;
   padding: 2.5rem;
 }
 
 .beneficios {
-  background: rgb(255,255,255);
+  background: var(--cor-secundaria);
   height: auto;
 }
 
@@ -124,7 +148,7 @@ h1::before{
 #organiza-beneficios li {
   display: grid;
   grid-template-columns: 60px 1fr;
-  border-left: 4px solid rgb(255,255,255);
+  border-left: 4px solid var(--cor-secundaria);
 }
 
 .icones {
@@ -138,12 +162,12 @@ h1::before{
 }
 
 #organiza-beneficios li:nth-child(odd) {
-  background-color: #f7f7f7;
-  border-left: 4px solid #f7f7f7;
+  background-color: var(--cor-primaria);
+  border-left: 4px solid transparent;
 }
 
 #organiza-beneficios li:hover {
-  border-left: 4px solid red;
+  border-left: 4px solid var(--cor-destaque);
 }
 
 .h3-beneficios{
@@ -152,7 +176,7 @@ h1::before{
 }
 
 footer {
-  background: rgb(255,255,255);
+  background: var(--cor-secundaria);
   padding: 20px;
   font-size: 1.25rem;
 }
