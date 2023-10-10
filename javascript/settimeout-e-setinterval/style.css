@@ -1,0 +1,47 @@
+body {
+  background-color:lightskyblue;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+body.ativo {
+  background-color:lightcoral;
+}
+
+span {
+  width: 60px;
+  height: 60;
+  font-size: 48px;
+  background-color: burlywood;
+  border-radius: 10px;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+div {
+  padding: 50px;
+  align-self: center;
+  display: grid;
+  gap: 20px;
+  background-color: floralwhite;
+  border-radius: 5px;
+}
+
+button {
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  color: white;
+}
+
+[data-btn="iniciar"] {
+  background-color: green;
+}
+[data-btn="pausar"] {
+  background-color: blue;
+  
+}
+[data-btn="resetar"] {
+  background-color: red;
+}
